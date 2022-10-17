@@ -1,0 +1,12 @@
+2022-10-16	21:41:20	e8d8c8bd-81b8-4cf3-918f-8b51561719f3	GET	undefinedt/
+2022-10-16	21:41:20	10cd948d-aeae-463b-a72d-4a128f6b110c	GET	undefinedt/css/style.css
+2022-10-16	21:46:22	197a9793-d3e3-49e4-a1a4-8cf65f7c6253	GET	undefined	/
+2022-10-16	21:46:22	458e93e6-bd3e-44df-9554-c521283e53bb	GET	undefined	/css/style.css
+2022-10-16	21:48:55	dde67fdb-1342-41cd-bfbb-0f39417a9395	GET	https://www.google.com	/
+2022-10-16	21:53:11	11166f55-f9d6-4d12-8f19-3c4d51b72d9c	GET	https://www.google.com	/
+2022-10-16	21:59:28	1558460f-e522-404f-a57e-64aaa958ae95	GET	https://www.google.com	/
+2022-10-16	22:00:15	f084159d-82c2-42e7-a175-8fb103eb8207	GET	https://www.google.com	/
+2022-10-16	22:03:58	bde31735-d420-4196-8b3d-cfb19b16fb08	GET	undefined	/
+2022-10-16	22:03:58	dd16bbbd-764d-477a-9472-82122e962c7c	GET	undefined	/favicon.ico
+2022-10-16	22:04:52	1513479d-0482-4531-ac94-a9001a3b8b42	GET	undefined	/
+2022-10-16	22:04:52	2b4311d3-51a6-4889-b8e7-bc2fb183e440	GET	undefined	/css/style.css
