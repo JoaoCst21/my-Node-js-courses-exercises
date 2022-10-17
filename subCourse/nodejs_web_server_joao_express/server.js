@@ -26,29 +26,37 @@ const corsOptions = {
   },
   optionsSuccessStatus: 200,
 };
-app.use(cors(corsOptions));
 
 // MIDLEWARE
+app.use(cors(corsOptions));
 app.use(express.urlencoded({ extended: false }));
-
 app.use(express.json());
 
-app.use(express.static(path.join(__dirname, "/public")));
+// Server Statict files
+app.use("/", express.static(path.join(__dirname, "/public")));
+app.use("/subdir", express.static(path.join(__dirname, "/public")));
 
-// REGEX
-app.get("^/$|/index(.html)?", (request, response) => {
-  // response.sendFile("./views/index.html", { root: __dirname });
-  response.sendFile(path.join(__dirname, "views", "index.html"));
+// routes
+app.use("/", require("./routes/root"));
+app.use("/subdir", require("./routes/subdir"));
+app.use("/employees", require("./routes/api/employees"));
+
+// else pages send a 404 page
+app.all("/*", (request, response) => {
+  response.status(404);
+  if (request.accepts("html")) {
+    response.sendFile(path.join(__dirname, "views", "404.html"));
+  }
+  if (request.accepts("json")) {
+    response.json({ error: "404 not found" });
+  } else response.type("txt").send("404 not found");
 });
 
-app.get("/new-page(.html)?", (request, response) => {
-  response.sendFile(path.join(__dirname, "views", "new-page.html"));
-});
+app.use(errorHandler);
 
-app.get("/old-page(.html)?", (request, response) => {
-  // response.sendFile(path.join(__dirname, "views", "new-page.html"));
-  response.redirect(301, "/new-page");
-});
+app.listen(PORT, () => console.log(`Server runnning on port: ${PORT}`));
+
+/*
 
 // Route Handlers
 app.get(
@@ -78,11 +86,5 @@ const three = (request, response) => {
 
 app.get("/chain(.html)?", [one, two, three]);
 
-// else pages send a 404 page
-app.get("/*", (request, response) => {
-  response.status(404).sendFile(path.join(__dirname, "views", "404.html"));
-});
 
-app.use(errorHandler);
-
-app.listen(PORT, () => console.log(`Server runnning on port: ${PORT}`));
+*/
