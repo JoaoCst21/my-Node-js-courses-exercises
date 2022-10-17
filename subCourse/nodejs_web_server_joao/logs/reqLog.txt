@@ -1,0 +1,10 @@
+2022-10-16	19:00:19	6691bbb1-7124-41bf-9baf-6c9d762bcc56	/data/data.json	GET
+2022-10-16	19:00:27	dafe47cb-f0f9-4b5b-9fe9-3605488461e6	/asjk	GET
+2022-10-16	19:00:27	aa429855-9303-419f-b062-6bcbbfd75558	/css/style.css	GET
+2022-10-16	19:02:01	fcd8e467-9f69-43f2-8b09-18588e333abe	/new-page.html	GET
+2022-10-16	19:02:01	dec03fd1-9397-49be-8c4f-1e26f2d2c3c5	/css/style.css	GET
+2022-10-16	19:02:01	b082695c-aa48-4b95-a809-15c6fc9959e0	/img/img1.jpg	GET
+2022-10-16	19:03:46	1846ce83-58eb-43fb-b56f-58f78236dbbe	/new-page.html	GET
+2022-10-16	19:04:21	5de0ffee-022f-458d-aaae-2de1947d74b7	/new-page.html	GET
+2022-10-16	19:04:21	c8f90fe1-0923-4c58-be5c-95623b6373c8	/css/style.css	GET
+2022-10-16	19:04:21	ef59ee5f-c564-4e06-ac2a-2abdea41c98e	/img/img1.jpg	GET
