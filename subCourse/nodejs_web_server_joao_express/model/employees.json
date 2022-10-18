@@ -28,5 +28,10 @@
     "id": 6,
     "firstname": "Diana",
     "lastname": "Castillo"
+  },
+  {
+    "id": 7,
+    "firstname": "Daniel",
+    "lastname": "Castillo"
   }
 ]
